@@ -10,4 +10,6 @@ const fact = {
 
 statement.textContent = fact.statement;
 
+function EnableDisableButton() {
 
+}
