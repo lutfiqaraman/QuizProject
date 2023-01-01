@@ -11,5 +11,10 @@ const fact = {
 statement.textContent = fact.statement;
 
 function EnableDisableButton() {
+    let trueButton = document.getElementsByName('true');
+    trueButton[0].setAttribute('disabled', '');
+}
 
+function isCorrect(guess) {
+    return 0;
 }
