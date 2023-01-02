@@ -9,11 +9,13 @@ const fact = {
 };
 
 statement.textContent = fact.statement;
+const disable = (button) => {
+    button.setAttribute('disabled', '');
+};
 
-function EnableDisableButton() {
-    let trueButton = document.getElementsByName('true');
-    trueButton[0].setAttribute('disabled', '');
-}
+const enable = (button) => {
+    button.removeAttribute('disabled');
+};
 
 function isCorrect(guess) {
     return 0;
