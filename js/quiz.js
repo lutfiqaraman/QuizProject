@@ -18,5 +18,5 @@ const enable = (button) => {
 };
 
 function isCorrect(guess) {
-    return 0;
+    return guess === fact.answer;
 }
