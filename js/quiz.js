@@ -17,6 +17,6 @@ const enable = (button) => {
     button.removeAttribute('disabled');
 };
 
-function isCorrect(guess) {
-    return guess === fact.answer;
+function isCorrect(guessString) {
+    return guessString === fact.answer.toString();
 }
