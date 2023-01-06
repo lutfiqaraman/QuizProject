@@ -20,3 +20,19 @@ const enable = (button) => {
 function isCorrect(guessString) {
     return guessString === fact.answer.toString();
 }
+
+for (const button of optionsButtons) {
+    button.addEventListener('click', function () {
+        explanation.textContent = fact.explanation;
+
+        for (const otherButton of optionsButtons) {
+            disable(otherButton);
+        }
+
+        if (isCorrect(button.value)) {
+            button.classList.add('correct');
+        } else {
+            button.classList.add('incorrect');
+        }
+    });
+}
